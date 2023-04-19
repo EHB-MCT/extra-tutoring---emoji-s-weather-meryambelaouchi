@@ -1,8 +1,11 @@
 "use strict";
 
 const weatherApp = {
-  init: {
-
+  init() {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', function () {
+      console.log('ok');
+    });
   },
   fetchWeatherData(city) {
 
